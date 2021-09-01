@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import { SignIn } from "./Registr";
+import { Login } from "./Registr";
 // // import { Step2 } from "./Step2";
 // // import { Step3 } from "./Step3";
 // // import { Result } from "./Result";
@@ -23,7 +23,7 @@ function App() {
     <>
         <Router> 
         <Switch>
-          <Route exact path="/" component={SignIn} />  
+          <Route exact path="/" component={Login} />  
           <Route path="/about" component={About} />  
         </Switch>
       </Router>
