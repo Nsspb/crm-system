@@ -28,8 +28,6 @@ function Copyright() {
   );
 }
 
-
-
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -69,6 +67,11 @@ export const Login = ({children, props})  =>{
         <Typography component="h1" variant="h5">
           Вход
         </Typography>
+      
+
+
+
+
         <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
@@ -98,15 +101,16 @@ export const Login = ({children, props})  =>{
             control={<Checkbox value="remember" color="primary" />}
             label="Запомнить меня"
           />
+
+
           <Button
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}
-            component={RouterLink} to="about"
-
-          >
+            component={RouterLink} to="about">
+      
            Логин
           </Button>
 
