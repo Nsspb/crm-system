@@ -1,16 +1,11 @@
-
-const About = () => <h1>Главная страница</h1>
-
+import Home from "./pages/home/Home";
 
 
 
 
 function App() {
-  return (
-    <>
-     Hello kitty
-    </>
-  );
+  
+return  <Home />
 }
 
 export default App;
