@@ -1,6 +1,8 @@
+import React from 'react'
+
 import './topbar.css';
-import SearchIcon from '@mui/icons-material/Search';
-import PersonIcon from '@mui/icons-material/Person';
+import { Person, Search, Chat, Notifications } from '@mui/icons-material';
+import logo from './person/autor.jpeg'
 
 export default function Topbar() {
     return (
@@ -10,32 +12,38 @@ export default function Topbar() {
             </div>
             <div className='topbarCenter'>
                 <div className='searchBar'>
-                    <SearchIcon />
+                    <Search className='searchIcon'/>
                     <input
                         placeholder='Поиск на сайте...'
-                        className='searchImput'
+                        className='searchInput'
                     />
                 </div>
+        
             </div>
             <div className='topbarRight'>
                 <div className='topbarLinks'>
                     <span className='topbarLink'>Домашняя страница</span>
-                    <span className='topbarLink'>Timeline</span>
+                    <span className='topbarLink'>Страница 2</span>
                 </div>
                 <div className='topbarIcons'>
                     <div className='topbarIconItem'>
-                        <PersonIcon />
+                        <Person />
                         <span className='topbarIconBadge'>1</span>
                     </div>
                     <div className='topbarIconItem'>
-                        <PersonIcon />
-                        <span className='topbarIconBadge'>1</span>
+                        <Chat />
+                        <span className='topbarIconBadge'>2</span>
                     </div>
                     <div className='topbarIconItem'>
-                        <PersonIcon />
+                        <Notifications />
                         <span className='topbarIconBadge'>1</span>
                     </div>
                 </div>
+                <img
+                    src={logo} 
+                    alt=''
+                    className='topbarImg'
+                />
             </div>
         </div>
     );
