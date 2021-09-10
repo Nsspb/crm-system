@@ -1,4 +1,4 @@
-.topbarContainer {
+.headerContainer {
     height: 50px;
     width: 100%;
     background-color: rgb(255, 136, 0);
@@ -14,36 +14,55 @@
     color: white;
     cursor: pointer;
 }
-.topbarLeft {
+.headerLeft {
     flex:3;
 }
-.topbarCenter {
+.headerCenter {
     flex:5;
 }
 
-.topbarRight {
+.headerRight {
     flex:4;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: rgb(255, 255, 255);
 }
-.topbarImg {
+.headerImg {
     width: 32px;
     height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+
 
 }
 
-.topbarIconItem{
+.headerIconItem{
     margin-right: 15px;
     cursor: pointer;
     position: relative;
 }
-.topbarIcons{
+.headerIcons{
     display: flex;
 }
+.headerIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
 
-.topbarLink{
+}
+
+.headerLink{
    margin-right: 10px; 
    font-size: 14px;
    font-weight: bold;

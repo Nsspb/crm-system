@@ -1,16 +1,16 @@
 import React from 'react'
 
-import './topbar.css';
+import './header.css';
 import { Person, Search, Chat, Notifications } from '@mui/icons-material';
 import logo from './person/autor.jpeg'
 
-export default function Topbar() {
+export default function Header() {
     return (
-        <div className='topbarContainer'>
-            <div className='topbarLeft'>
+        <div className='headerContainer'>
+            <div className='headerLeft'>
                 <span className='logo'>Просто логотип</span>
             </div>
-            <div className='topbarCenter'>
+            <div className='headerCenter'>
                 <div className='searchBar'>
                     <Search className='searchIcon'/>
                     <input
@@ -20,29 +20,29 @@ export default function Topbar() {
                 </div>
         
             </div>
-            <div className='topbarRight'>
-                <div className='topbarLinks'>
-                    <span className='topbarLink'>Домашняя страница</span>
-                    <span className='topbarLink'>Страница 2</span>
+            <div className='headerRight'>
+                <div className='headerLinks'>
+                    <span className='headerLink'>Домашняя страница</span>
+                    <span className='headerLink'>Страница 2</span>
                 </div>
-                <div className='topbarIcons'>
-                    <div className='topbarIconItem'>
+                <div className='headerIcons'>
+                    <div className='headerIconItem'>
                         <Person />
-                        <span className='topbarIconBadge'>1</span>
+                        <span className='headerIconBadge'>1</span>
                     </div>
-                    <div className='topbarIconItem'>
+                    <div className='headerIconItem'>
                         <Chat />
-                        <span className='topbarIconBadge'>2</span>
+                        <span className='headerIconBadge'>2</span>
                     </div>
-                    <div className='topbarIconItem'>
+                    <div className='headerIconItem'>
                         <Notifications />
-                        <span className='topbarIconBadge'>1</span>
+                        <span className='headerIconBadge'>1</span>
                     </div>
                 </div>
                 <img
                     src={logo} 
                     alt=''
-                    className='topbarImg'
+                    className='headerImg'
                 />
             </div>
         </div>
