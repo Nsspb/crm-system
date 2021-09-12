@@ -1,5 +1,6 @@
 import './leftbar.css'
-import {RssFeed, School, Event, WorkOutline, HelpOutline, Bookmark, Group, PlayCircleOutline, Chat} from '@mui/icons-material'
+import {RssFeed, HelpOutline, Bookmark, Group, PlayCircleOutline, Chat} from '@mui/icons-material'
+import img1 from './images/1.jpg'
 
 export default function Leftbar() {
     return (
@@ -30,17 +31,50 @@ export default function Leftbar() {
         <HelpOutline className='leftbarIcon' />
         <span className="leftbarListItemText"> Помощь</span>
                  </li>
-                 <li className="leftbarLIstItem">
-        <WorkOutline className='leftbarIcon' />
-        <span className="leftbarListItemText"> Работа</span>
+
+             </ul>
+             <button className='leftbarButton' >Развернуть </button>
+             <hr className='leftbarHr' />
+             <ul className="leftbarFriendList">
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Иван Иванов</span>
                  </li>
-                 <li className="leftbarLIstItem">
-        <Event className='leftbarIcon' />
-        <span className="leftbarListItemText"> Встречи</span>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Вася Васин</span>
                  </li>
-                 <li className="leftbarLIstItem">
-        <School className='leftbarIcon' />
-        <span className="leftbarListItemText"> Обучение</span>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Вася Иванов</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Иван Васин</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Федор Иванов</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Иван Федоров</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Федор Васин</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Игорь Акинфеев</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Игорь Дивеев</span>
+                 </li>
+                 <li className="leftbarFriend">
+                     <img src={img1} alt="" className="leftbarFriendsImg" />
+                     <span className="leftbarFriendName">Виктор Васин</span>
                  </li>
              </ul>
             </div>
