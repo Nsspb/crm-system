@@ -2,9 +2,12 @@ https://nsspb.github.io/crm-system/
 Процесс разработки...
 
 В проекте будет использован:
-React,
-MongoDB,
-NodeJS.
+react,
+material-ui,
+mongoDB,
+nodeJS.
+
+
 
 Deploy делается 1-3 раза в день.
 
