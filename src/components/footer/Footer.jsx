@@ -8,6 +8,8 @@ export default function Footer() {
            <div className="footerWrapper">
                <Share />
                <Post />
+               <Post />
+               <Post />
            </div>
         </div>
     )
