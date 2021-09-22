@@ -1,6 +1,9 @@
 import './leftbar.css'
 import {RssFeed, HelpOutline, Bookmark, Group, PlayCircleOutline, Chat} from '@mui/icons-material'
-import img1 from './images/1.jpg'
+// import img1 from './images/1.jpg'
+import {Users} from "../../dummyData" 
+import Friend from '../friends/Friend'
+
 
 export default function Leftbar() {
     return (
@@ -36,46 +39,10 @@ export default function Leftbar() {
              <button className='leftbarButton' >Развернуть </button>
              <hr className='leftbarHr' />
              <ul className="leftbarFriendList">
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Иван Иванов</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Вася Васин</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Вася Иванов</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Иван Васин</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Федор Иванов</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Иван Федоров</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Федор Васин</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Игорь Акинфеев</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Игорь Дивеев</span>
-                 </li>
-                 <li className="leftbarFriend">
-                     <img src={img1} alt="" className="leftbarFriendsImg" />
-                     <span className="leftbarFriendName">Виктор Васин</span>
-                 </li>
+               {Users.map((u) => (
+                   <Friend key={u.id} user = {u} />
+               ))}
+              
              </ul>
             </div>
         </div>
