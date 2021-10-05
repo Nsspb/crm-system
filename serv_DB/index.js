@@ -1,5 +1,5 @@
 
-const PORT = 1945
+const PORT = 1946
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -12,6 +12,7 @@ const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
 const router = express.Router();
 const path = require("path");
+
 
 dotenv.config();
 
