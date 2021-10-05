@@ -1,7 +1,7 @@
 import './leftbar.css'
 import {RssFeed, HelpOutline, Bookmark, Group, PlayCircleOutline, Chat} from '@mui/icons-material'
 // import img1 from './images/1.jpg'
-import {Users} from "../../dummyData" 
+import {Users} from  "../../dummyData"
 import Friend from '../friends/Friend'
 
 

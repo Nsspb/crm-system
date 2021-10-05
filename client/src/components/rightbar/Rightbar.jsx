@@ -55,7 +55,7 @@ export default function Rightbar({ user }) {
           </span>
         </div>
         <img className="rightbarReclama" src="assets/reclama.gif" alt="" />
-        <h4 className="rightbarTitle">Онлайн друзья</h4>
+        <h4 className="rightbarTitle">дРУЗЬЯ ОНЛАЙН</h4>
         <ul className="rightbarFriendList">
           {Users.map((u) => (
             <Online key={u.id} user={u} />

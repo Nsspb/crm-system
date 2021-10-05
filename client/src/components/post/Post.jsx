@@ -83,7 +83,7 @@ export default function Post({ post }) {
                     </div>
                     <div className='postBottomRight'>
                         <span className='postCommentText'>
-                            {post.comment} комментариев
+                            {post.comment} comments
                         </span>
                     </div>
                 </div>
