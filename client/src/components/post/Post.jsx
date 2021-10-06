@@ -73,7 +73,7 @@ export default function Post({ post }) {
                         />
                         <img
                             className='likeIcon'
-                            src={`${PF}heart.png`}
+                            src={`${PF}dislike.png`}
                             onClick={likeHandler}
                             alt=''
                         />
