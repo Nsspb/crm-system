@@ -17,12 +17,12 @@ router.put("/:id", async (req, res) => {
       const user = await User.findByIdAndUpdate(req.params.id, {
         $set: req.body,
       });
-      res.status(200).json("Account has been updated");
+      res.status(200).json("Аккаунт обновлен");
     } catch (err) {
       return res.status(500).json(err);
     }
   } else {
-    return res.status(403).json("You can update only your account!");
+    return res.status(403).json("Вы можете обновить только свой аккаунт!");
   }
 });
 
@@ -31,12 +31,12 @@ router.delete("/:id", async (req, res) => {
   if (req.body.userId === req.params.id || req.body.isAdmin) {
     try {
       await User.findByIdAndDelete(req.params.id);
-      res.status(200).json("Account has been deleted");
+      res.status(200).json("Аккаунт удален");
     } catch (err) {
       return res.status(500).json(err);
     }
   } else {
-    return res.status(403).json("You can delete only your account!");
+    return res.status(403).json("Вы можее удалить только свой аккаунт!");
   }
 });
 
@@ -85,15 +85,15 @@ router.put("/:id/follow", async (req, res) => {
       if (!user.followers.includes(req.body.userId)) {
         await user.updateOne({ $push: { followers: req.body.userId } });
         await currentUser.updateOne({ $push: { followings: req.params.id } });
-        res.status(200).json("user has been followed");
+        res.status(200).json("Вы подписались на пользователя");
       } else {
-        res.status(403).json("you allready follow this user");
+        res.status(403).json("Вы уже подписаны на этого пользователя");
       }
     } catch (err) {
       res.status(500).json(err);
     }
   } else {
-    res.status(403).json("you cant follow yourself");
+    res.status(403).json("Вы не можете подписаться на себя самого");
   }
 });
 
@@ -107,15 +107,15 @@ router.put("/:id/unfollow", async (req, res) => {
       if (user.followers.includes(req.body.userId)) {
         await user.updateOne({ $pull: { followers: req.body.userId } });
         await currentUser.updateOne({ $pull: { followings: req.params.id } });
-        res.status(200).json("user has been unfollowed");
+        res.status(200).json("Вы отписались от пользователя");
       } else {
-        res.status(403).json("you dont follow this user");
+        res.status(403).json("Вы не подписаны на пользователя");
       }
     } catch (err) {
       res.status(500).json(err);
     }
   } else {
-    res.status(403).json("you cant unfollow yourself");
+    res.status(403).json("Вы не можете отписаться от себя");
   }
 });
 
