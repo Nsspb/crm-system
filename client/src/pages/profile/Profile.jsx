@@ -23,7 +23,7 @@ export default function Profile() {
   
     return (
       <>
-      sdsd
+      
         <Header />
         <div className="profile">
           <Leftbar />

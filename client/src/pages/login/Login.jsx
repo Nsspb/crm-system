@@ -21,9 +21,9 @@ export default function Login() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">Сеть для друзей</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+          Общайтесь в одном месте
           </span>
         </div>
         <div className="loginRight">
@@ -36,7 +36,7 @@ export default function Login() {
               ref={email}
             />
             <input
-              placeholder="Password"
+              placeholder="Пароль"
               type="password"
               required
               minLength="6"
@@ -47,15 +47,15 @@ export default function Login() {
               {isFetching ? (
                 <CircularProgress color="white" size="20px" />
               ) : (
-                "Log In"
+                "Вход"
               )}
             </button>
-            <span className="loginForgot">Forgot Password?</span>
+            <span className="loginForgot">Забыли пароль?</span>
             <button className="loginRegisterButton">
               {isFetching ? (
                 <CircularProgress color="white" size="20px" />
               ) : (
-                "Create a New Account"
+                "Создайте новый аккаунт"
               )}
             </button>
           </form>

@@ -18,7 +18,7 @@ export default function Header() {
         <div className="searchbar">
           <Search className="searchIcon" />
           <input
-            placeholder="Search for friend, post or video"
+            placeholder="Поиск..."
             className="searchInput"
           />
         </div>

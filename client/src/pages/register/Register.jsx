@@ -13,7 +13,7 @@ export default function Register() {
   const handleClick = async (e) => {
     e.preventDefault();
     if (passwordAgain.current.value !== password.current.value) {
-      passwordAgain.current.setCustomValidity("Passwords don't match!");
+      passwordAgain.current.setCustomValidity("Пароль не совпадает");
     } else {
       const user = {
         username: username.current.value,
@@ -33,15 +33,15 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">Сеть для друзей</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+            Общайтесь в одном месте
           </span>
         </div>
         <div className="loginRight">
           <form className="loginBox" onSubmit={handleClick}>
             <input
-              placeholder="Username"
+              placeholder="Логин"
               required
               ref={username}
               className="loginInput"
@@ -54,7 +54,7 @@ export default function Register() {
               type="email"
             />
             <input
-              placeholder="Password"
+              placeholder="Пароль"
               required
               ref={password}
               className="loginInput"
@@ -62,16 +62,16 @@ export default function Register() {
               minLength="6"
             />
             <input
-              placeholder="Password Again"
+              placeholder="Повторите пароль"
               required
               ref={passwordAgain}
               className="loginInput"
               type="password"
             />
             <button className="loginButton" type="submit">
-              Sign Up
+              Регистрация
             </button>
-            <button className="loginRegisterButton">Log into Account</button>
+            <button className="loginRegisterButton">Вход</button>
           </form>
         </div>
       </div>
