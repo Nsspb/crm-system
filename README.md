@@ -1,2 +1,2 @@
 # crm-system
-crm система на ReactJS, material-ui. In process..
+Большой проект на ReactJS, material-ui, mongoDB, websocket. In process..
